@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Shreekar Kadam 👋</h1>
 
 <p align="center">
-  <b>CSE @ IIT Mandi</b> &nbsp;·&nbsp; Classic ML &nbsp;·&nbsp; Full-Stack Web
+  <b>CSE @ IIT Mandi</b> &nbsp;·&nbsp; AI/ML Systems &nbsp;·&nbsp; Full-Stack 
 </p>
 
 <p align="center">
@@ -15,7 +15,7 @@
 
 I'm a Computer Science & Engineering undergraduate at **IIT Mandi** (CGPA: 8.42). I focus on building robust full-stack applications and designing scalable machine learning pipelines. 
 
-- 🔭 Working across **Data Structures, Algorithms, and Machine Learning**.
+- 🔭 Working across **Data Structures, Algorithms, and Machine Learning, and Agentic AI**.
 - 🏆 Secured **2nd Place at Hack 60** (Advanced AI & Robotics Hackathon, HCLTech).
 - 🧩 I care about competitive programming — successfully solved **450+ problems** across LeetCode and GFG.
 - 🎤 Outside of code, I assist in large-scale event coordination and act as an Event Anchor for fests like Exodia and Xpecto.
