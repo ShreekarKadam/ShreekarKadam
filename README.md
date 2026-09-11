@@ -36,12 +36,13 @@ I'm a Computer Science & Engineering undergraduate at **IIT Mandi** (CGPA: 8.42)
 
 ## 🚀 Featured Projects
 
-### 🧠 ContextOS — Context Compression System for AI Agents
-*Python · FAISS · Knowledge Graphs · Gradio*
-> Engineered a context-management framework implementing a Retrieval-Augmented Generation (RAG) pipeline for efficient long-context reasoning.
-- 🏗️ Architected a reusable, modular 7-stage pipeline integrating NER, FAISS vector retrieval, and knowledge-graph construction.
-- ⚡ Achieved ~10x context compression while maintaining <250 ms latency and 100% constraint retention.
-- 🥈 **2nd Place**, Hack 60 (HCLTech, IIT Mandi) competing among multiple teams in a research-oriented track.
+#### 🧠 ContextOS — Context-Compression Middleware for Multi-Turn LLM Agents
+*Python · PyTorch · HuggingFace Transformers · FAISS · spaCy · LLMLingua · Gradio*
+> A 7-layer pipeline that shrinks LLM conversation context ~90% while **never dropping safety-critical constraints** (allergies, budgets, deadlines).
+- 🏗️ Architected a pipeline sequencing NER → token compression → salience scoring → FAISS retrieval → knowledge-graph safety check
+- 💰 Cut context tokens **~90%** (~10× mean, up to **44× peak**) and per-session inference cost ~90%; **0 context overflows vs 19** in the naive baseline
+- ✅ **100% critical-constraint retention**, proven model-agnostic across SmolLM2-1.7B and Qwen2.5-3B
+- 🥈 **2nd place**, Context Compression track @ Hack 60 (HCLTech, IIT Mandi), 450+ participants
 
 🔗 [View Repository](https://github.com/Tanmaydes23/context_os) 
 
@@ -58,12 +59,12 @@ I'm a Computer Science & Engineering undergraduate at **IIT Mandi** (CGPA: 8.42)
 
 ---
 
-### 👁️ Diff-IrisPAD — Unsupervised Iris Presentation Attack Detection
-*Python · OpenCV*
-> Developed an unsupervised iris presentation attack detection (PAD) system utilizing robust image processing without requiring attack samples.
-- 🎯 Designed an iris preprocessing pipeline integrating Hough-based segmentation and CLAHE enhancement.
-- 🔬 Generated degraded-clean pairs for robust feature extraction and statistical analysis.
-- 📊 Achieved a best ACER of 0.3052 on the LivDet-Iris 2025 through systematic experiment design and extensive ablation studies.
+### 👁️ Diff-IrisPAD — Unsupervised Iris Presentation-Attack Detection *(Research)*
+*Python · PyTorch · Latent Brownian Bridge Diffusion (LBBDM-f4) · ViT-B/16 · VQGAN*
+> A spoof detector trained **only on genuine irises** — zero attack labels at any stage — that flags 8 attack types by reconstruction divergence. Under review at IJCB 2026.
+- 🎯 **30.46% ACER** under the strict Zero-Attack-Knowledge protocol on LivDet-Iris 2025 (50,612 attack images), beating the AnoDDPM baseline by **9.27 pp**
+- 🔬 Ran a systematic scoring-method ablation over a **125,854-image** preprocessing pipeline, selecting ViT-B/16 CLS cosine divergence as the final scorer
+- 📊 Benchmarked against 5 supervised baselines (ResNet50, ViT-B, MaxViT, DINOv1, DINOv2)
 
 🔗 [View Repository](https://github.com/harshyadav028/DiffIris-Pad)
 
